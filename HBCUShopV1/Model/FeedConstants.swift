@@ -25,7 +25,7 @@ struct Constants {
     }
     
     struct NewsFeedParameterValues {
-        static let kwords = "hats"
+        static let kwords = "HBCU"
         static let pageSize = "55"
         static let language = "en"
         static let apiKey = "ihanunogiibfy8rz3vyfpnur"

@@ -122,17 +122,20 @@ class TableViewController : UITableViewController {
                     var itemText : String = ""
                     var urlText = Array(repeating: "", count: 25)
                     var titleText = Array(repeating: "", count: 25)
+                    var priceText = Array(repeating: "", count: 25)
                     var articleCount = textList?.count as! Int
                     if articleCount > 25 { articleCount = 25 }
                      for item in 0 ... articleCount - 1 {
                         let itemText = textList![item] as! [String : Any]
                         titleText[item].append(itemText["title"] as! String)
                         urlText[item].append(itemText["url"] as! String)
+                        priceText[item].append(itemText["price"] as! String)
                             }
                     TableViewController.urlList = urlText
                     TableViewController.tableText = titleText
                     debugPrint(TableViewController.tableText)
                     debugPrint("TotalAdded :", titleText)
+                    debugPrint("TotalAdded :", priceText)
                     DispatchQueue.main.async {
                             self.stopLoading()
                             self.tableView.reloadData()
