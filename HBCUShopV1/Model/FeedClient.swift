@@ -10,15 +10,13 @@ import Foundation
 class NewsFeedClient {
     
     var session = URLSession.shared
-    func getListArticles(_ articleHeading: String, completionHandlerForArticle: @escaping (_ text1: AnyObject?, _ error: NSError?)-> Void) -> URLSessionTask {
+    func getListArticles(_ campusPhrase: String, completionHandlerForArticle: @escaping (_ text1: AnyObject?, _ error: NSError?)-> Void) -> URLSessionTask {
         
         // Constants.NewsFeedParameterValues.q
         
         debugPrint("Text line")
         let methodParameters = [
-            Constants.NewsFeedParameterKeys.Keywords:articleHeading,
-            Constants.NewsFeedParameterKeys.Page:Constants.NewsFeedParameterValues.pageSize,
-            Constants.NewsFeedParameterKeys.Language:Constants.NewsFeedParameterValues.language,
+            Constants.NewsFeedParameterKeys.Keywords:campusPhrase,
             Constants.NewsFeedParameterKeys.APIKey:Constants.NewsFeedParameterValues.apiKey
         ]
         
