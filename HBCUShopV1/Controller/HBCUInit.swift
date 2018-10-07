@@ -25,10 +25,10 @@ class HBCUListViewController : UITableViewController {
         super.viewDidLoad()
         debugPrint("view did load")
         
-        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         debugPrint("Entries 2 :", HBCUListViewController.fEntries)
-        loadEntries()
+  //      loadEntries()
     }
 
     
@@ -58,14 +58,14 @@ class HBCUListViewController : UITableViewController {
 
     }
     
-    @objc func fetchEntries(){
-        
-        if CoreDataStack.sharedManager.fetchAllEntries() != nil{
-            
-            HBCUListViewController.fEntries = CoreDataStack.sharedManager.fetchAllEntries()!
-        }
-        debugPrint("Entries 2 :", HBCUListViewController.fEntries)
-        }
+//    @objc func fetchEntries(){
+//        
+//        if CoreDataStack.sharedManager.fetchAllEntries() != nil{
+//            
+//            HBCUListViewController.fEntries = CoreDataStack.sharedManager.fetchAllEntries()!
+//        }
+//        debugPrint("Entries 2 :", HBCUListViewController.fEntries)
+//        }
     
     func loadEntries(){
         let entrycount = HBCUListViewController.fEntries.count

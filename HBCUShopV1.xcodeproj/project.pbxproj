@@ -19,6 +19,7 @@
 		D9A045512169AC90003A5650 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045502169AC90003A5650 /* CoreDataStack.swift */; };
 		D9A045532169ACAC003A5650 /* FeedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045522169ACAC003A5650 /* FeedClient.swift */; };
 		D9A045552169ACB1003A5650 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045542169ACB1003A5650 /* FeedConstants.swift */; };
+		D9A045572169D378003A5650 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045562169D378003A5650 /* ConnectionCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D9A045502169AC90003A5650 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D9A045522169ACAC003A5650 /* FeedClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedClient.swift; sourceTree = "<group>"; };
 		D9A045542169ACB1003A5650 /* FeedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
+		D9A045562169D378003A5650 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				D9A0454E21699D14003A5650 /* HBCUInit.swift */,
-				D9A0454A21699CEC003A5650 /* FavoriteViewController.swift */,
 				D9A0454C21699CFE003A5650 /* TableViewController.swift */,
+				D9A0454A21699CEC003A5650 /* FavoriteViewController.swift */,
+				D9A045562169D378003A5650 /* ConnectionCheck.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				D9A0454F21699D14003A5650 /* HBCUInit.swift in Sources */,
 				D9A0453521699C6B003A5650 /* ViewController.swift in Sources */,
 				D9A0453B21699C6B003A5650 /* HBCUShopV1.xcdatamodeld in Sources */,
+				D9A045572169D378003A5650 /* ConnectionCheck.swift in Sources */,
 				D9A0454B21699CEC003A5650 /* FavoriteViewController.swift in Sources */,
 				D9A0454D21699CFE003A5650 /* TableViewController.swift in Sources */,
 				D9A045532169ACAC003A5650 /* FeedClient.swift in Sources */,

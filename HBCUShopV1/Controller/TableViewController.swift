@@ -63,7 +63,9 @@ class TableViewController : UITableViewController {
             TableViewController.feedListAdded.append(TableViewController.tableText[indexPath.row])
             TableViewController.urlListAdded.append(TableViewController.urlList[indexPath.row])
             
-                self.save(title:TableViewController.tableText[indexPath.row], url:TableViewController.urlList[indexPath.row])
+//                self.save(title:TableViewController.tableText[indexPath.row], url:TableViewController.urlList[indexPath.row])
+//
+            
         }
 
         debugPrint(TableViewController.feedListAdded)
@@ -94,15 +96,15 @@ class TableViewController : UITableViewController {
         }
     }
     
-    func save(title: String, url : String) {
-        
-        let fEntry = CoreDataStack.sharedManager.insertEntry(title: title, url: url)
-        
-        if fEntry != nil {
-            fEntries.append(fEntry!)
-            tableView.reloadData()
-        }
-    }
+//    func save(title: String, url : String) {
+//        
+//       let fEntry = CoreDataStack.sharedManager.insertEntry(title: title, url: url)
+//        
+//        if fEntry != nil {
+//            fEntries.append(fEntry!)
+//            tableView.reloadData()
+//        }
+//    }
     
     func displayList()
     {
@@ -113,14 +115,15 @@ class TableViewController : UITableViewController {
         self.startLoading()
         
         feedProcess().getListArticles(searchText) { (data, error) in
-            
-                    let textList = data!["articles"] as! Array<Any>?
+                    debugPrint(data, "/End of data pulled")
+                    let textList = data!["results"] as! Array<Any>?
+                    debugPrint(textList)
                     var articlesList : String = ""
                     var itemText : String = ""
-                    var urlText = Array(repeating: "", count: 20)
-                    var titleText = Array(repeating: "", count: 20)
+                    var urlText = Array(repeating: "", count: 25)
+                    var titleText = Array(repeating: "", count: 25)
                     var articleCount = textList?.count as! Int
-                    if articleCount > 20 { articleCount = 20 }
+                    if articleCount > 25 { articleCount = 25 }
                      for item in 0 ... articleCount - 1 {
                         let itemText = textList![item] as! [String : Any]
                         titleText[item].append(itemText["title"] as! String)

@@ -16,13 +16,13 @@ class NewsFeedClient {
         
         debugPrint("Text line")
         let methodParameters = [
-            Constants.NewsFeedParameterKeys.Keywords:campusPhrase,
+            Constants.NewsFeedParameterKeys.Keywords:Constants.NewsFeedParameterValues.kwords,
             Constants.NewsFeedParameterKeys.APIKey:Constants.NewsFeedParameterValues.apiKey
         ]
         
         let request = URLRequest(url: newsfeedURLFromParameters(methodParameters as [String : AnyObject]))
         
-        debugPrint(request)
+        debugPrint(request, " / End of API params")
         
         let task = session.dataTask(with:request) { (data, response, error) in
             func sendError(_ error: String) {

@@ -80,9 +80,6 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
-                                <connections>
-                                    <outlet property="Title" destination="W1d-x7-QVL" id="IOs-j9-Ys8"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
