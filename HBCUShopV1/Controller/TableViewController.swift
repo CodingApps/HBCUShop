@@ -12,6 +12,7 @@ class TableViewController : UITableViewController {
     static var tableText = Array(repeating: "", count: 20)
     static var urlList = Array(repeating: "", count: 20)
     static var priceList = Array(repeating: "", count: 20)
+    static var imageList = Array(repeating: "", count: 20)
     var fEntries: [NSManagedObject] = []
     var searchText : String = ""
     let textCellIndentifier = "itemCell"
@@ -126,6 +127,7 @@ class TableViewController : UITableViewController {
                     var urlText = Array(repeating: "", count: 25)
                     var titleText = Array(repeating: "", count: 25)
                     var priceText = Array(repeating: "", count: 25)
+                    var imgText = Array(repeating: "", count: 25)
                     var articleCount = textList?.count as! Int
                     if articleCount > 25 { articleCount = 25 }
                      for item in 0 ... articleCount - 1 {
@@ -133,10 +135,12 @@ class TableViewController : UITableViewController {
                         titleText[item].append(itemText["title"] as! String)
                         urlText[item].append(itemText["url"] as! String)
                         priceText[item].append(itemText["price"] as! String)
+                        imgText[item].append(itemText["url_75x75"] as! String)
                             }
                     TableViewController.urlList = urlText
                     TableViewController.tableText = titleText
                     TableViewController.priceList = priceText
+                    TableViewController.imageList = imgText
                     debugPrint(TableViewController.tableText)
                     debugPrint("TotalAdded :", titleText)
                     debugPrint("TotalAdded :", priceText)

@@ -17,7 +17,8 @@ class NewsFeedClient {
         debugPrint("Text line")
         let methodParameters = [
             Constants.NewsFeedParameterKeys.Keywords:Constants.NewsFeedParameterValues.kwords,
-            Constants.NewsFeedParameterKeys.APIKey:Constants.NewsFeedParameterValues.apiKey
+            Constants.NewsFeedParameterKeys.APIKey:Constants.NewsFeedParameterValues.apiKey,
+            Constants.NewsFeedParameterKeys.Includes:Constants.NewsFeedParameterValues.include
         ]
         
         let request = URLRequest(url: newsfeedURLFromParameters(methodParameters as [String : AnyObject]))

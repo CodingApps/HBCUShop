@@ -22,10 +22,12 @@ struct Constants {
   //      static let Language = "language"
         static let Keywords = "keywords"
   //      static let Page = "pageSize"
+        static let Includes = "includes"
     }
     
     struct NewsFeedParameterValues {
         static let kwords = "HBCU"
+        static let include = "MainImage"
         static let pageSize = "55"
         static let language = "en"
         static let apiKey = "ihanunogiibfy8rz3vyfpnur"
