@@ -11,10 +11,10 @@ class TableViewController : UITableViewController {
     let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     static var tableText = Array(repeating: "", count: 20)
     static var urlList = Array(repeating: "", count: 20)
- 
+    static var priceList = Array(repeating: "", count: 20)
     var fEntries: [NSManagedObject] = []
     var searchText : String = ""
-    let textCellIndentifier = "feedCell"
+    let textCellIndentifier = "itemCell"
     let feedProcess = NewsFeedClient.sharedInstance
     
     static var feedListAdded = [String]()
@@ -50,11 +50,14 @@ class TableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: textCellIndentifier, for: indexPath as IndexPath)
+  //      let cell = tableView.dequeueReusableCell(withIdentifier: textCellIndentifier, for: indexPath as IndexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! itemCell
         
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = TableViewController.tableText[indexPath.row]
-                return cell
+        cell.Title.text = TableViewController.tableText[indexPath.row]
+        cell.Price.text = TableViewController.priceList[indexPath.row]
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -133,6 +136,7 @@ class TableViewController : UITableViewController {
                             }
                     TableViewController.urlList = urlText
                     TableViewController.tableText = titleText
+                    TableViewController.priceList = priceText
                     debugPrint(TableViewController.tableText)
                     debugPrint("TotalAdded :", titleText)
                     debugPrint("TotalAdded :", priceText)

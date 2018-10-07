@@ -12,4 +12,6 @@ internal class itemCell : UITableViewCell {
     
     @IBOutlet var Title: UILabel!
     
+    @IBOutlet weak var Price: UILabel!
+    
 }

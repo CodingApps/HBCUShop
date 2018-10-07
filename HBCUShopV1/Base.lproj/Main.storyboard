@@ -46,7 +46,7 @@
         <!--Table View Controller-->
         <scene sceneID="ta0-ii-T5K">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewController" id="M9b-3o-DoM" customClass="TableViewController" customModule="EBikeV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="M9b-3o-DoM" customClass="TableViewController" customModule="HBCUShopV1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1fV-lE-hRe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,7 @@
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
                                 <connections>
+                                    <outlet property="Price" destination="ffX-WX-0qi" id="lC6-Fw-esm"/>
                                     <outlet property="Title" destination="W1d-x7-QVL" id="BNx-MI-ndf"/>
                                 </connections>
                             </tableViewCell>
@@ -141,16 +142,16 @@
         <!-- -->
         <scene sceneID="0x1-DX-sdm">
             <objects>
-                <tableViewController id="fOX-C4-Diy" customClass="FavViewController" customModule="EBikeV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fOX-C4-Diy" customClass="FavViewController" customModule="HBCUShopV1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ook-dP-ze7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favCell" rowHeight="86" id="Ji3-sE-Uek" customClass="favCell" customModule="EBikeV1_TestA" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favCell" rowHeight="86" id="Ji3-sE-Uek" customClass="favCell" customModule="HBCUShopV1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ji3-sE-Uek" id="HSR-Y5-3SF" customClass="favCell" customModule="EBikeV1_TestA" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ji3-sE-Uek" id="HSR-Y5-3SF" customClass="favCell" customModule="HBCUShopV1" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
