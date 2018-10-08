@@ -132,10 +132,12 @@ class TableViewController : UITableViewController {
                     if articleCount > 25 { articleCount = 25 }
                      for item in 0 ... articleCount - 1 {
                         let itemText = textList![item] as! [String : Any]
+                        let imgInfo = itemText["MainImage"] as! [String : Any]
                         titleText[item].append(itemText["title"] as! String)
                         urlText[item].append(itemText["url"] as! String)
                         priceText[item].append(itemText["price"] as! String)
-                        imgText[item].append(itemText["url_75x75"] as! String)
+                        imgText[item].append(imgInfo["url_75x75"] as! String)
+                        
                             }
                     TableViewController.urlList = urlText
                     TableViewController.tableText = titleText
