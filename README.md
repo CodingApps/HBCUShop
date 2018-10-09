@@ -1,11 +1,11 @@
 <h1 align="center"> HBCU Shop </h1> <br>
 
-<h4 align="center">View HBCU products with an API from Etsy's ecommmerce site, which can be selected to order</h4> <br>
+<h4 align="center">View HBCU products with an API from Etsy's ecommerce site, which can be selected to order</h4> <br>
  
 
 ## Intro
 
-This project allows you to view products with an API from Etsy's ecommmerce site onto a table view. You can then select a product to order it, which loads the Etsy item's page in an external browser. 
+This project allows you to view products with an API from Etsy's ecommerce site onto a table view. You can then select a product to order it, which loads the Etsy item's page in an external browser. 
 
 <p align="center">
   <img alt="onthemap" title="onthemap" src="screenshots/HBCUShop1.gif" width=300>
