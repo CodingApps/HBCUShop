@@ -57,7 +57,7 @@ class TableViewController : UITableViewController {
         
         cell.textLabel?.numberOfLines = 0
         cell.Title.text = TableViewController.tableText[indexPath.row]
-        cell.Price.text = TableViewController.priceList[indexPath.row]
+        cell.Price.text = "$" + TableViewController.priceList[indexPath.row]
         return cell
     }
     
@@ -100,16 +100,7 @@ class TableViewController : UITableViewController {
         }
     }
     
-//    func save(title: String, url : String) {
-//        
-//       let fEntry = CoreDataStack.sharedManager.insertEntry(title: title, url: url)
-//        
-//        if fEntry != nil {
-//            fEntries.append(fEntry!)
-//            tableView.reloadData()
-//        }
-//    }
-    
+ 
     func displayList()
     {
     

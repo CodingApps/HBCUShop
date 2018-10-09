@@ -53,9 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D95F1EE9216CF5C700869359 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		D9A0452621699C6B003A5650 = {
 			isa = PBXGroup;
 			children = (
+				D95F1EE9216CF5C700869359 /* screenshots */,
 				D9A0453121699C6B003A5650 /* HBCUShopV1 */,
 				D9A0453021699C6B003A5650 /* Products */,
 			);
