@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95F1EEB216CF62800869359 /* HBCUShop1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D95F1EEA216CF62700869359 /* HBCUShop1.gif */; };
 		D9A0453321699C6B003A5650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0453221699C6B003A5650 /* AppDelegate.swift */; };
 		D9A0453521699C6B003A5650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0453421699C6B003A5650 /* ViewController.swift */; };
 		D9A0453821699C6B003A5650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A0453621699C6B003A5650 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D95F1EEA216CF62700869359 /* HBCUShop1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HBCUShop1.gif; sourceTree = "<group>"; };
 		D9A0452F21699C6B003A5650 /* HBCUShopV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBCUShopV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0453221699C6B003A5650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A0453421699C6B003A5650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		D95F1EE9216CF5C700869359 /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				D95F1EEA216CF62700869359 /* HBCUShop1.gif */,
 			);
 			path = screenshots;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				D9A0454021699C6D003A5650 /* LaunchScreen.storyboard in Resources */,
 				D9A0453D21699C6D003A5650 /* Assets.xcassets in Resources */,
+				D95F1EEB216CF62800869359 /* HBCUShop1.gif in Resources */,
 				D9A0453821699C6B003A5650 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
