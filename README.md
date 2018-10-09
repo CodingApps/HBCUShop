@@ -21,7 +21,7 @@ This project allows you to view products with an API from Etsy's ecommerce site 
 
 ## Methods on the Main Thread
 
-An interesting part of the TableView controller was adding the item press fuction for the UI. Had to have an Objective-C call for long-press in order to add it.
+An interesting part of the TableView controller was adding the item press function for the UI. Had to have an Objective-C call for long-press in order to add it.
 
 ``` swift
     @objc func longPress(_ longPressGestureRecognizer: UILongPressGestureRecognizer) {
