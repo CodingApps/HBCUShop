@@ -22,6 +22,7 @@
 		D9A045552169ACB1003A5650 /* FeedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045542169ACB1003A5650 /* FeedConstants.swift */; };
 		D9A045572169D378003A5650 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A045562169D378003A5650 /* ConnectionCheck.swift */; };
 		D9A04559216ABB1D003A5650 /* HShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A04558216ABB1D003A5650 /* HShopCell.swift */; };
+		D9FE872A21859C2D007AAF23 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FE872921859C2D007AAF23 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D9A045542169ACB1003A5650 /* FeedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConstants.swift; sourceTree = "<group>"; };
 		D9A045562169D378003A5650 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 		D9A04558216ABB1D003A5650 /* HShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HShopCell.swift; sourceTree = "<group>"; };
+		D9FE872921859C2D007AAF23 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 		D9A0452621699C6B003A5650 = {
 			isa = PBXGroup;
 			children = (
-				D95F1EE9216CF5C700869359 /* screenshots */,
 				D9A0453121699C6B003A5650 /* HBCUShopV1 */,
+				D95F1EE9216CF5C700869359 /* screenshots */,
 				D9A0453021699C6B003A5650 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 				D9A0454C21699CFE003A5650 /* TableViewController.swift */,
 				D9A0454A21699CEC003A5650 /* FavoriteViewController.swift */,
 				D9A045562169D378003A5650 /* ConnectionCheck.swift */,
+				D9FE872921859C2D007AAF23 /* ImageCache.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				D9A0453B21699C6B003A5650 /* HBCUShopV1.xcdatamodeld in Sources */,
 				D9A045572169D378003A5650 /* ConnectionCheck.swift in Sources */,
 				D9A0454B21699CEC003A5650 /* FavoriteViewController.swift in Sources */,
+				D9FE872A21859C2D007AAF23 /* ImageCache.swift in Sources */,
 				D9A0454D21699CFE003A5650 /* TableViewController.swift in Sources */,
 				D9A045532169ACAC003A5650 /* FeedClient.swift in Sources */,
 				D9A045552169ACB1003A5650 /* FeedConstants.swift in Sources */,

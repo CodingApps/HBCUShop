@@ -51,25 +51,31 @@ class TableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-  //      let cell = tableView.dequeueReusableCell(withIdentifier: textCellIndentifier, for: indexPath as IndexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! itemCell
         
         cell.textLabel?.numberOfLines = 0
         cell.Title.text = TableViewController.tableText[indexPath.row]
         cell.Price.text = "$" + TableViewController.priceList[indexPath.row]
+  
+        let fimage = TableViewController.imageList[indexPath.row]
+        if fimage != "" {
+        ImageLoader.sharedInstance.imageForUrl(urlString: fimage, completionHandler: { (image, url) in
+            if image != nil {
+                
+                cell.Img.image = image
+            }
+        })
+        }
+        
         return cell
-    }
+   }
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .normal, title: "Favorite") { (action, view, bool) in
             bool(true)
             TableViewController.feedListAdded.append(TableViewController.tableText[indexPath.row])
             TableViewController.urlListAdded.append(TableViewController.urlList[indexPath.row])
-            
-//                self.save(title:TableViewController.tableText[indexPath.row], url:TableViewController.urlList[indexPath.row])
-//
-            
         }
 
         debugPrint(TableViewController.feedListAdded)
@@ -92,9 +98,9 @@ class TableViewController : UITableViewController {
             
             let touchPoint = longPressGestureRecognizer.location(in: self.view)
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-                let urlArticle = TableViewController.urlList[indexPath.row]
-                if let urlArticle = URL(string: urlArticle), UIApplication.shared.canOpenURL(urlArticle) {
-                    UIApplication.shared.openURL(urlArticle)
+                let urlProduct = TableViewController.urlList[indexPath.row]
+                if let urlProduct = URL(string: urlProduct), UIApplication.shared.canOpenURL(urlProduct) {
+                    UIApplication.shared.openURL(urlProduct)
                 }
             }
         }
@@ -137,6 +143,7 @@ class TableViewController : UITableViewController {
                     debugPrint(TableViewController.tableText)
                     debugPrint("TotalAdded :", titleText)
                     debugPrint("TotalAdded :", priceText)
+                    debugPrint("TotalAdded :", imgText)
                     DispatchQueue.main.async {
                             self.stopLoading()
                             self.tableView.reloadData()

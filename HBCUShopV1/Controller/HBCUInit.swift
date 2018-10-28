@@ -24,11 +24,7 @@ class HBCUListViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         debugPrint("view did load")
-        
-//        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(fetchEntries), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         debugPrint("Entries 2 :", HBCUListViewController.fEntries)
-  //      loadEntries()
     }
 
     
@@ -56,31 +52,6 @@ class HBCUListViewController : UITableViewController {
         let tabviewVc = navVc.viewControllers.first as! TableViewController
         tabviewVc.searchText = "Product area" // Will be text search string going to Etsy
 
-    }
-    
-//    @objc func fetchEntries(){
-//        
-//        if CoreDataStack.sharedManager.fetchAllEntries() != nil{
-//            
-//            HBCUListViewController.fEntries = CoreDataStack.sharedManager.fetchAllEntries()!
-//        }
-//        debugPrint("Entries 2 :", HBCUListViewController.fEntries)
-//        }
-    
-    func loadEntries(){
-        let entrycount = HBCUListViewController.fEntries.count
-        if entrycount != 0 {
-            HBCUListViewController.titlesLoaded = []
-            HBCUListViewController.urlsLoaded = []
-            for count in 0 ... entrycount-1 {
-                
-                    HBCUListViewController.urlsLoaded.append(HBCUListViewController.fEntries[count].value(forKeyPath: "url") as! String)
-                    HBCUListViewController.titlesLoaded.append(HBCUListViewController.fEntries[count].value(forKeyPath: "title") as! String)
-            }
-            TableViewController.feedListAdded = HBCUListViewController.titlesLoaded
-            TableViewController.urlListAdded = HBCUListViewController.urlsLoaded
-        }
-        
     }
     
 }

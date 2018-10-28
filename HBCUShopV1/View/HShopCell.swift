@@ -14,4 +14,5 @@ internal class itemCell : UITableViewCell {
     
     @IBOutlet weak var Price: UILabel!
     
+    @IBOutlet weak var Img: UIImageView!
 }
